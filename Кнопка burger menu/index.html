@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+<div class="section">
+    <a href="#" class="menu-btn">
+        <span></span>
+    </a>
+</div>
+<script>
+    $('.menu-btn').on('click', function(e){
+        e.preventDefault;
+        $(this).toggleClass('menu-btn_active')
+    })
+</script>
+</body>
+</html>

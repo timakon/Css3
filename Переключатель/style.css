@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size:16px;
+    background-color:#e2e7ec;
+    font-family: Arial, sans-serif;
+}
+.container{
+    width: 550px;
+    margin: 40px auto;
+}
+.block, .block-1{
+    padding: 20px;
+    background: #fff;
+    margin: 20px 0;
+    transition: 0.5s;
+}
+.block p, .block-1 p{
+    color:#000;
+    font-size:16px;
+    line-height: 16px;
+}
+.switch-for{
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+}
+.switch-for::after{
+    content:"";
+    width: 50px;
+    height: 25px;
+    background:#a8adb2;
+    border: 1px solid black;
+    border-radius: 15px;
+    position: absolute;
+    top:-4px;
+    right:-62px;
+    transition-delay: 3s;
+    transition: 0.2s;
+}
+.switch-for::before{
+    content:"";
+    width: 21px;
+    height: 21px;
+    background:#fff;
+    border-radius: 50%;
+    position: absolute;
+    top:-1px;
+    right:-35px;
+    z-index:1;
+    transition: 0.3s;
+}
+.switch{
+    display: none;
+}
+.switch:checked + .switch-for::before{
+    right: -58px;
+}
+.switch:checked + .switch-for::after{
+    background: deepskyblue;
+}
+.switch:checked ~.block{
+    background: #000;
+}
+.switch:checked ~.block p{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
